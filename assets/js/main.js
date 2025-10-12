@@ -85,6 +85,22 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     },
 })
 
+/*==================== TESTIMONI SWIPER  ====================*/
+
+let swipertestimoni = new Swiper('.testimoni__container', {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+})
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -160,7 +176,7 @@ const sr = ScrollReveal({
     reset: true
   })
   
-  sr.reveal(`.home__title, .about, .skills, .journey, .portfolio, .contact, .footer`)
+  sr.reveal(`.home__title, .about, .skills, .journey, .portfolio, .testimoni, .contact, .footer`)
   sr.reveal(`.home__data, .footer__info`, {delay: 500})
   sr.reveal(`.home__scroll`, {delay: 600})
   sr.reveal(`.home__img`, {origin: 'right'})
